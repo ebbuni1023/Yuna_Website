@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Form a Story -->
+    <!-- 
+        We’ll be collecting information from our users using a <form> so, 
+        first, we have to add a <form> under the <hr> element inside the <body> of index.html.
+        
+        Assign the <form> an action of "story.html" and a method of "GET".
+        We’ll be sending information from our form to story.html using a GET request.
+        -->
+     <section id="top">
+        <img src="https://content.codecademy.com/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo">
+      </section>
+  
+      <body id="main">
+        <h1>Complete the Form -<br> Complete the Story!</h1>
+        <hr>
+  <!--Add your form below:-->
+  <!-- 
+
+Our story has quite a few blanks, so we’re going to need a lot more <label>s and <input>s.
+
+Add another <label> with a for attribute of "animal-2" that renders Another Animal: to the webpage.
+
+Underneath the <label>, create a new <input> with the attributes:
+
+* id and name set to "animal-2".
+* type to "text".
+* required
+
+Add another <br> for a line break.
+
+
+   -->
+      <form action="story.html" method="get">
+        <label for="animal-1">animal</label>
+        <input type="text" id="animal-1" name="animal-1" required />
+       <br>
+       <label for="animal-2">animal</label>
+
+
+
+       <input type="submit" value="form my story">
+
+      </form>     
+      </body>
+</html>
