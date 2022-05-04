@@ -25,30 +25,33 @@
         <hr>
   <!--Add your form below:-->
   <!-- 
+One of our blanks requires a “yes” or “no” answer— sounds like we can use some radio buttons for that.
 
-Our story has quite a few blanks, so we’re going to need a lot more <label>s and <input>s.
-
-Add another <label> with a for attribute of "animal-2" that renders Another Animal: to the webpage.
-
-Underneath the <label>, create a new <input> with the attributes:
-
-* id and name set to "animal-2".
-* type to "text".
-* required
-
-Add another <br> for a line break.
-
-
+Before we can add the radio buttons, add a <span> element that has the text Yes or No:.
    -->
       <form action="story.html" method="get">
-        <label for="animal-1">animal</label>
-        <input type="text" id="animal-1" name="animal-1" required />
-       <br>
-       <label for="animal-2">animal</label>
-
-
-
-       <input type="submit" value="form my story">
+          <label for="animal-1">animal 1</label>
+          <input type="text" id="animal-1" name="animal-1" required />
+          <br>
+          <label for="animal-2">animal 2</label>
+          <input type="text" id="animal-2" name="animal-2" required>
+          <br>
+          <label for="animal-3">animal 3</label>
+          <input type="text" id="animal-3" name="animal-3" requied>
+          <br>
+          <label for="adj-1">adj-1 (past tense)</label>
+          <input type="text" id="adj-1" name="adj-1" required>
+          <br>
+          <label for="verb-1">verb-1 (ends in -ing)</label>
+          <input type="text" id="verb-1" name="verb-1" required>
+          <br>
+          <label for="num-1">num-1</label> 
+          <input type="number" id="num-1" name="num-1" required>
+          <br>
+          <span>Yes or No</span>
+          <input type="radio" id="yes" name="answer" value="yes" required>
+          <input type="radio" id="no" name="answer" value="no" required>
+          <input type="submit" value="form my story">
 
       </form>     
       </body>
